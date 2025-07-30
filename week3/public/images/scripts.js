@@ -8,13 +8,13 @@ $(document).ready(function () {
 const cardList = [
   {
     title: "Kitten 2",
-    image: "images/kitten2.jpg",
+    image: "images/kitten-2.jpg",
     link: "About Kitten 2",
     desciption: "Demo desciption about kitten 2",
   },
   {
     title: "Kitten 3",
-    image: "images/kitten3.jpg",
+    image: "images/kitten-3.jpg",
     link: "About Kitten 3",
     desciption: "Demo desciption about kitten 3",
   },
@@ -26,7 +26,7 @@ const addCards = (items) => {
   items.forEach((item) => {
     let itemToAppend =
       '<div class="col s4 center-align">' +
-      '<div class="card medium" style="border-radius: 20px"><div class="card-image waves-effect waves-block waves-light" style="border-radius: 20px"><img class="activator" src="' +
+      '<div class="card medium"><div class="card-image waves-effect waves-block waves-light"><img class="activator" src="' +
       item.image +
       '">' +
       '</div><div class="card-content">' +
@@ -51,14 +51,5 @@ $(document).ready(function () {
   $("#clickMeButton").click(() => {
     clickMe();
   });
-
   addCards(cardList);
-});
-
-$(document).ready(function () {
-  $(".fixed-action-btn").floatingActionButton();
-});
-
-$(document).ready(function () {
-  $(".tooltipped").tooltip();
 });
